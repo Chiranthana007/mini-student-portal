@@ -1,147 +1,22 @@
-<!-- Ultra Mini Website (Option 1) -->
-<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Student System</title>
-  <style>
-    body { font-family: Arial, sans-serif; background:#f5f5f5; margin:0; padding:20px; }
-    .card { background:#fff; padding:20px; margin:20px auto; max-width:450px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-    h1, h2 { margin-top:0; }
-    a { display:block; margin:8px 0; color:#333; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    label { display:block; margin:10px 0 4px; }
-    input, select { width:100%; padding:8px; border:1px solid #ccc; border-radius:6px; }
-    button { margin-top:12px; padding:10px 14px; border:none; border-radius:6px; background:#333; color:white; cursor:pointer; }
-    button:hover { background:#000; }
-    table { width:100%; border-collapse: collapse; margin-top:10px; }
-    th, td { border:1px solid #ddd; padding:8px; text-align:left; }
-    th { background:#eee; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="card">
-    <h1>Student System</h1>
-    <a href="students.html">Students</a>
-    <a href="courses.html">Courses</a>
-    <a href="enroll.html">Enroll</a>
-    <a href="grades.html">Grades</a>
-    <a href="attendance.html">Attendance</a>
-    <a href="report.html">Report</a>
-  </div>
-</body>
-</html>
 
-<!-- students.html -->
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Students</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="card">
-    <h2>Add Student</h2>
-    <form method="POST" action="/add_student">
-      <label>Name</label>
-      <input name="name" />
-      <label>Age</label>
-      <input name="age" />
-      <button>Add</button>
-    </form>
-  </div>
-</body>
-</html>
+<div class="card">
+  <h1>Student System</h1>
 
-<!-- courses.html -->
-<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>Courses</title><link rel="stylesheet" href="styles.css"></head>
-<body>
-  <div class="card">
-    <h2>Add Course</h2>
-    <form method="POST" action="/add_course">
-      <label>Course Name</label>
-      <input name="cname" />
-      <button>Add</button>
-    </form>
-  </div>
-</body>
-</html>
+  <a href="students.html">Students</a>
+  <a href="courses.html">Courses</a>
+  <a href="enroll.html">Enroll</a>
+  <a href="grades.html">Grades</a>
+  <a href="attendance.html">Attendance</a>
+  <a href="report.html">Report</a>
+</div>
 
-<!-- enroll.html -->
-<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>Enroll</title><link rel="stylesheet" href="styles.css"></head>
-<body>
-  <div class="card">
-    <h2>Enroll Student</h2>
-    <form method="POST" action="/enroll">
-      <label>Student ID</label>
-      <input name="sid" />
-      <label>Course ID</label>
-      <input name="cid" />
-      <button>Enroll</button>
-    </form>
-  </div>
-</body>
-</html>
-
-<!-- grades.html -->
-<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>Grades</title><link rel="stylesheet" href="styles.css"></head>
-<body>
-  <div class="card">
-    <h2>Assign Grade</h2>
-    <form method="POST" action="/grade">
-      <label>Student ID</label>
-      <input name="sid" />
-      <label>Course ID</label>
-      <input name="cid" />
-      <label>Grade</label>
-      <input name="grade" />
-      <button>Submit</button>
-    </form>
-  </div>
-</body>
-</html>
-
-<!-- attendance.html -->
-<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>Attendance</title><link rel="stylesheet" href="styles.css"></head>
-<body>
-  <div class="card">
-    <h2>Attendance</h2>
-    <form method="POST" action="/attendance">
-      <label>Student ID</label>
-      <input name="sid" />
-      <label>Status</label>
-      <select name="status">
-        <option>Present</option>
-        <option>Absent</option>
-      </select>
-      <button>Mark</button>
-    </form>
-  </div>
-</body>
-</html>
-
-<!-- report.html -->
-<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>Report</title><link rel="stylesheet" href="styles.css"></head>
-<body>
-  <div class="card">
-    <h2>Student Report</h2>
-    <form method="POST" action="/report">
-      <label>Student ID</label>
-      <input name="sid" />
-      <button>View</button>
-    </form>
-  </div>
 </body>
 </html>
